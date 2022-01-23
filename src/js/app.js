@@ -1,4 +1,5 @@
 const table = document.querySelector('.table');
+// table.addEventListener('click', tableOnClick);
 let colIndex = -1;
 
 function sortTable(index, type, isSorted) {
@@ -36,12 +37,13 @@ function sortTable(index, type, isSorted) {
 }
 
 
+table.addEventListener('click', tableOnClick);
 
-table.addEventListener('click', (e) => {
+function tableOnClick(e) {
     const el = e.target;
     if (el.nodeName !== 'TH') return;
     const index = el.cellIndex;
     const type = el.getAttribute('data-type');
     sortTable(index, type, colIndex === index);
     colIndex = (colIndex === index) ? -1 : index;
-});
+}
