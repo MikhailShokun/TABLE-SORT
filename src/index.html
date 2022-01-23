@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{ "title":"Главная" })
+
+<body>
+    @@include('html/header.html',{})
+
+    <main class="page">
+        <div class="container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th data-type="integer">Рейтинг языка</th>
+                        <th data-type="text">Название</th>
+                        <th data-type="integer">Цена</th>
+                        <th data-type="double">Количество часов</th>
+                        <th data-type="text">Ментор</th>
+                        <th data-type="date">Дата начала курса</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>JavaScript</td>
+                        <td>3000</td>
+                        <td>24</td>
+                        <td>Иван Иванов</td>
+                        <td>25.01.2022</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Java</td>
+                        <td>5600</td>
+                        <td>32</td>
+                        <td>Валентин Валентинов</td>
+                        <td>01.03.2022</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>C#</td>
+                        <td>3400</td>
+                        <td>24</td>
+                        <td>Александр Александров</td>
+                        <td>15.02.2022</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Python</td>
+                        <td>2900</td>
+                        <td>16</td>
+                        <td>Михаил Михаилин</td>
+                        <td>03.02.2022</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>PHP</td>
+                        <td>7900</td>
+                        <td>32</td>
+                        <td>Сергей Сергеев</td>
+                        <td>25.02.2022</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>TypeScript</td>
+                        <td>1500</td>
+                        <td>40</td>
+                        <td>Илья Ильин</td>
+                        <td>07.02.2022</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>C++</td>
+                        <td>8700</td>
+                        <td>36</td>
+                        <td>Владимир Владимиров</td>
+                        <td>17.02.2022</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Swift</td>
+                        <td>8000</td>
+                        <td>48</td>
+                        <td>Данил Данилов</td>
+                        <td>04.03.2022</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Ruby</td>
+                        <td>9500</td>
+                        <td>27</td>
+                        <td>Фурфыня Фурфыньев</td>
+                        <td>30.01.2022</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Kotlin</td>
+                        <td>7000</td>
+                        <td>34</td>
+                        <td>Мкарджа Ахиджава</td>
+                        <td>22.02.2022</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+
+    @@include('html/footer.html',{})
+    <script src="js/app.min.js"></script>
+
+</html>
