@@ -34,10 +34,21 @@ function sortTable(index, type, isSorted) {
         tbody.appendChild(rows[i]);
     }
     table.appendChild(tbody);
+
+
+    // const arrows = document.querySelectorAll('.arrow');
+    // arrows.forEach(arrow => {
+    //     arrow.addEventListener('click', function(e) {
+    //         arrow.classList.toggle('rotate');
+    //     });
+    // })
+
 }
 
 
 table.addEventListener('click', tableOnClick);
+
+
 
 function tableOnClick(e) {
     const el = e.target;
@@ -46,4 +57,6 @@ function tableOnClick(e) {
     const type = el.getAttribute('data-type');
     sortTable(index, type, colIndex === index);
     colIndex = (colIndex === index) ? -1 : index;
+    const arrow = el.querySelector('.arrow');
+    arrow.classList.toggle('rotate');
 }
